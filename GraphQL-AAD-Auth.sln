@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer4withAdminUI1", "IdentityServer4withAdminUI1\IdentityServer4withAdminUI1.csproj", "{E44E9C00-AFF2-4F29-AEDD-32F17C0229DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrapQL.API", "GrapQL.API\GrapQL.API.csproj", "{9606449C-97F6-446D-9EB2-2FE80139B332}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E44E9C00-AFF2-4F29-AEDD-32F17C0229DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E44E9C00-AFF2-4F29-AEDD-32F17C0229DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E44E9C00-AFF2-4F29-AEDD-32F17C0229DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E44E9C00-AFF2-4F29-AEDD-32F17C0229DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9606449C-97F6-446D-9EB2-2FE80139B332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9606449C-97F6-446D-9EB2-2FE80139B332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9606449C-97F6-446D-9EB2-2FE80139B332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9606449C-97F6-446D-9EB2-2FE80139B332}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
