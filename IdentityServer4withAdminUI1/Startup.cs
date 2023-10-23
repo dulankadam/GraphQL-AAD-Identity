@@ -105,7 +105,7 @@ namespace IdentityServer4withAdminUI1
                 })
                 .AddOpenIdConnect("aad", "Sign-in with Azure AD", options =>
                 {
-                    options.Authority = "https://login.microsoftonline.com/common";
+                    options.Authority = Configuration.GetValue<string>("AAD_REQUEST_URI");
                     options.ClientId = Configuration.GetValue<string>("AAD_CLIENT_ID");
                     options.ClientSecret = Configuration.GetValue<string>("AAD_CLIENT_SECRET");
 

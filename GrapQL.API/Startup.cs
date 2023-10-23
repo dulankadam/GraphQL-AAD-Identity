@@ -79,8 +79,8 @@ namespace GrapQL.API
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
                 endpoints.MapGraphQL();
+                endpoints.MapControllers();
             });
         }
     }
