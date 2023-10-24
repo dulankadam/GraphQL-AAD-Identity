@@ -6,13 +6,13 @@ namespace GrapQL.API.Models
     {
         public string Title { get; set; }
 
-        [Authorize]
+        //[Authorize]
         public Author Author { get; set; }
     }
 
     public class Author
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = "Default Name";
     }
 
 }
