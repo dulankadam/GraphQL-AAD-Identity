@@ -10,15 +10,18 @@ namespace GrapQL.API.Queries
     public class Query
     {
         [Authorize]
-        public Book GetBook(ClaimsPrincipal claimsPrincipal) =>
+        public Book GetBook(ClaimsPrincipal claimsPrincipal) =>            
             new Book
             {
                 Title = "API Authentication with AAD, and Auth",
                 Author = new Author
                 {
-                    Name = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == "name")?.Value
+                     
+                    Name = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == "name")?.Value,
+                    Email = claimsPrincipal.Claims.FirstOrDefault(e=> e.Type == "iss")?.Value,
                 }
             };
+        
     }
 
 }

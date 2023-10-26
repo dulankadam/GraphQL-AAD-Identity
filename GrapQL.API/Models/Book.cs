@@ -12,7 +12,8 @@ namespace GrapQL.API.Models
 
     public class Author
     {
-        public string Name { get; set; } = "Default Name";
+        public string Name { get; set; }
+        public string Email { get; set; }
     }
 
 }
