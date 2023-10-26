@@ -272,6 +272,8 @@ namespace IdentityServer4.Quickstart.UI
                 UserName = Guid.NewGuid().ToString(),
                 Email = email,
                 NormalizedUserName = name,
+                NormalizedEmail = email,               
+
             };
             var identityResult = await _userManager.CreateAsync(user);
             if (!identityResult.Succeeded) throw new Exception(identityResult.Errors.First().Description);
